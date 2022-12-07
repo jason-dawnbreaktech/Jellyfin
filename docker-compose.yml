@@ -1,0 +1,14 @@
+version: '3.5'
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    user: 1000:1000
+    network_mode: 'bridge'
+    volumes:
+      - C:\Users\ARIA\Docker\config:/config
+      - C:\Users\ARIA\Docker\cache:/cache
+      - E:\Movies:/Movies
+      - E:\Shows:/Shows
+    restart: 'unless-stopped'
+    
