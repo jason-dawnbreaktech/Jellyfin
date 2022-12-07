@@ -6,8 +6,8 @@ services:
     user: 1000:1000
     network_mode: 'bridge'
     volumes:
-      - C:\Users\ARIA\Docker\config:/config
-      - C:\Users\ARIA\Docker\cache:/cache
+      - C:\Users\ARIA\Docker\jellyfin\config:/config
+      - C:\Users\ARIA\Docker\jellyfin\cache:/cache
       - E:\Movies:/Movies
       - E:\Shows:/Shows
     restart: 'unless-stopped'
